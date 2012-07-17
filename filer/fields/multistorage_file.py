@@ -71,7 +71,7 @@ class MultiStorageFieldFile(ThumbnailerNameMixin,
 
     def save(self, name, content, save=True):
         content.seek(0) # Ensure we upload the whole file
-        super(MultiStorageFieldFile, self).save(name, content, save)
+        super(MultiStorageFieldFile, self).save(name, content, save)    
 
 
 class MultiStorageFileField(easy_thumbnails_fields.ThumbnailerField):
